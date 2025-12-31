@@ -688,8 +688,10 @@
         }
 
         .project-tag {
-            background: rgba(37, 99, 235, 0.15);
-            color: var(--primary);
+            /* background: rgba(37, 99, 235, 0.15); */
+            background: rgba(37, 99, 235, 0.35);  /* desaturated blue */
+            color: #e5e7eb;                       /* light gray / near white */
+            /* color: var(--primary); */
             padding: 0.25rem 0.7rem;
             border-radius: 2rem;
             font-size: 0.75rem;
@@ -995,6 +997,63 @@
                 height: 600px;
             }
         }
+
+        .project-image {
+        width: 100%;
+        height: 200px;          /* control height here */
+        overflow: hidden;
+        }
+
+        .project-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;      /* crop to fill */
+        object-position: center;
+        }
+
+        .project-links {
+        display: flex;
+        gap: 0.75rem;
+        }
+
+        /* Base button look */
+        .project-link {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.4rem;
+        padding: 0.45rem 0.95rem;
+        border-radius: 999px;
+        font-size: 0.8rem;
+        font-weight: 500;
+        text-decoration: none;
+        transition: transform 0.12s ease, box-shadow 0.12s ease, background 0.12s ease;
+        }
+
+        /* Primary: Live Demo */
+        .project-link-demo {
+        background: #3b82f6;          /* blue */
+        color: #f9fafb;               /* near-white */
+        box-shadow: 0 8px 20px rgba(37, 99, 235, 0.35);
+        }
+
+        .project-link-demo:hover {
+        background: #2563eb;
+        transform: translateY(-1px);
+        }
+
+        /* Secondary: GitHub / Code */
+        .project-link-code {
+        background: transparent;
+        color: #e5e7eb;
+        border: 1px solid rgba(148, 163, 184, 0.6); /* subtle gray/blue border */
+        }
+
+        .project-link-code:hover {
+        border-color: rgba(249, 250, 251, 0.9);
+        background: rgba(15, 23, 42, 0.6);
+        transform: translateY(-1px);
+        }
+
     </style>
 </head>
 <body>
@@ -1208,6 +1267,41 @@
         <div style="margin-bottom: 3rem;">
             <h3 style="font-size: 1.3rem; margin-bottom: 1.5rem; color: var(--text-primary);">📌 Showcase Projects</h3>
             <div class="projects-grid">
+
+                <div class="project-card scroll-animate">
+                    <div class="project-image">
+                        <img src="Icon/Helmet_Detection_1.jpg" alt="Helmet Detection AI Demo" class="project-image-img" />
+                    </div>
+                
+                    <div class="project-content">
+                        <h3 class="project-title">Helmet Detection using YoLo</h3>
+                
+                        <p class="project-description">
+                            Real-time helmet detection app built with YOLOv8, OpenCV, and Streamlit.
+                            Analyze rider safety from images or video streams, highlighting riders
+                            with and without helmets for quick visual inspection.
+                        </p>
+                
+                        <div class="project-tags">
+                            <span class="project-tag">Computer Vision</span>
+                            <span class="project-tag">YOLOv8</span>
+                            <span class="project-tag">Streamlit</span>
+                            <span class="project-tag">Safety Analytics</span>
+                        </div>
+                
+                        <div class="project-links">
+                            <a href="https://pavan-helmet.streamlit.app" target="_blank" class="project-link project-link-demo">
+                                Live Demo
+                            </a>
+                            <a href="https://github.com/Pavan-jangid-here/Computer-vision/tree/main/1-Helmet-Detection" target="_blank" class="project-link project-link-code">
+                                <i class="fab fa-github"></i> Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+
+
                 <div class="project-card scroll-animate">
                     <div class="project-image">📄</div>
                     <div class="project-content">
