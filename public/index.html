@@ -152,11 +152,17 @@
         }
 
         .hero-emoji {
-            font-size: 5rem;
-            margin-bottom: 1rem;
-            display: inline-block;
-            animation: float 3s ease-in-out infinite;
+        margin-bottom: 1rem;
+        display: inline-block;
+        animation: float 3s ease-in-out infinite;
         }
+
+        .hero-emoji img {
+        height: 6rem;      /* or width: 5rem; */
+        width: auto;
+        display: block;
+        }
+
 
         @keyframes float {
             0%, 100% { transform: translateY(0px); }
@@ -1077,7 +1083,10 @@
     <!-- Hero Section -->
     <section class="hero" id="home">
         <div class="hero-content">
-            <div class="hero-emoji">🚀</div>
+            <div class="hero-emoji">
+                <img src="Icon/Portfolio_1.png" alt="Portfolio icon">
+            </div>
+
             <h1>Hi, I'm Pavan Jangid</h1>
             <p class="hero-subtitle">Data/Business Analyst | Data Scientist | Analytics | AI/GenAI</p>
             <p class="hero-description">
