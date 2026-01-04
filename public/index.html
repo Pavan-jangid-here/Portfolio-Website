@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,7 +19,9 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@600;700;800&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         :root {
@@ -152,21 +155,29 @@
         }
 
         .hero-emoji {
-        margin-bottom: 1rem;
-        display: inline-block;
-        animation: float 3s ease-in-out infinite;
+            margin-bottom: 1rem;
+            display: inline-block;
+            animation: float 3s ease-in-out infinite;
         }
 
         .hero-emoji img {
-        height: 6rem;      /* or width: 5rem; */
-        width: auto;
-        display: block;
+            height: 6rem;
+            /* or width: 5rem; */
+            width: auto;
+            display: block;
         }
 
 
         @keyframes float {
-            0%, 100% { transform: translateY(0px); }
-            50% { transform: translateY(-20px); }
+
+            0%,
+            100% {
+                transform: translateY(0px);
+            }
+
+            50% {
+                transform: translateY(-20px);
+            }
         }
 
         .hero h1 {
@@ -243,6 +254,7 @@
                 opacity: 0;
                 transform: translateY(30px);
             }
+
             to {
                 opacity: 1;
                 transform: translateY(0);
@@ -337,6 +349,7 @@
                 opacity: 0;
                 transform: translateX(-30px);
             }
+
             to {
                 opacity: 1;
                 transform: translateX(0);
@@ -348,6 +361,7 @@
                 opacity: 0;
                 transform: translateY(30px);
             }
+
             to {
                 opacity: 1;
                 transform: translateY(0);
@@ -359,6 +373,7 @@
                 opacity: 0;
                 transform: scale(0.95);
             }
+
             to {
                 opacity: 1;
                 transform: scale(1);
@@ -374,10 +389,21 @@
             animation: fadeInUp 0.6s ease-out forwards;
         }
 
-        .scroll-animate.stagger-1 { animation-delay: 0.1s; }
-        .scroll-animate.stagger-2 { animation-delay: 0.2s; }
-        .scroll-animate.stagger-3 { animation-delay: 0.3s; }
-        .scroll-animate.stagger-4 { animation-delay: 0.4s; }
+        .scroll-animate.stagger-1 {
+            animation-delay: 0.1s;
+        }
+
+        .scroll-animate.stagger-2 {
+            animation-delay: 0.2s;
+        }
+
+        .scroll-animate.stagger-3 {
+            animation-delay: 0.3s;
+        }
+
+        .scroll-animate.stagger-4 {
+            animation-delay: 0.4s;
+        }
 
         .about-image {
             text-align: center;
@@ -651,8 +677,13 @@
         }
 
         @keyframes spin {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
         }
 
         .project-image {
@@ -695,8 +726,10 @@
 
         .project-tag {
             /* background: rgba(37, 99, 235, 0.15); */
-            background: rgba(37, 99, 235, 0.35);  /* desaturated blue */
-            color: #e5e7eb;                       /* light gray / near white */
+            background: rgba(37, 99, 235, 0.35);
+            /* desaturated blue */
+            color: #e5e7eb;
+            /* light gray / near white */
             /* color: var(--primary); */
             padding: 0.25rem 0.7rem;
             border-radius: 2rem;
@@ -1005,64 +1038,73 @@
         }
 
         .project-image {
-        width: 100%;
-        height: 200px;          /* control height here */
-        overflow: hidden;
+            width: 100%;
+            height: 200px;
+            /* control height here */
+            overflow: hidden;
         }
 
         .project-image img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;      /* crop to fill */
-        object-position: center;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            /* crop to fill */
+            object-position: center;
         }
 
         .project-links {
-        display: flex;
-        gap: 0.75rem;
+            display: flex;
+            gap: 0.75rem;
         }
 
         /* Base button look */
         .project-link {
-        display: inline-flex;
-        align-items: center;
-        gap: 0.4rem;
-        padding: 0.45rem 0.95rem;
-        border-radius: 999px;
-        font-size: 0.8rem;
-        font-weight: 500;
-        text-decoration: none;
-        transition: transform 0.12s ease, box-shadow 0.12s ease, background 0.12s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+            padding: 0.45rem 0.95rem;
+            border-radius: 999px;
+            font-size: 0.8rem;
+            font-weight: 500;
+            text-decoration: none;
+            transition: transform 0.12s ease, box-shadow 0.12s ease, background 0.12s ease;
         }
 
         /* Primary: Live Demo */
         .project-link-demo {
-        background: #3b82f6;          /* blue */
-        color: #f9fafb;               /* near-white */
-        box-shadow: 0 8px 20px rgba(37, 99, 235, 0.35);
+            background: #3b82f6;
+            /* blue */
+            color: #f9fafb;
+            /* near-white */
+            box-shadow: 0 8px 20px rgba(37, 99, 235, 0.35);
         }
 
         .project-link-demo:hover {
-        background: #2563eb;
-        transform: translateY(-1px);
+            background: #2563eb;
+            transform: translateY(-1px);
         }
 
         /* Secondary: GitHub / Code */
         .project-link-code {
-        background: transparent;
-        color: #e5e7eb;
-        border: 1px solid rgba(148, 163, 184, 0.6); /* subtle gray/blue border */
+            background: transparent;
+            color: #e5e7eb;
+            border: 1px solid rgba(148, 163, 184, 0.6);
+            /* subtle gray/blue border */
         }
 
         .project-link-code:hover {
-        border-color: rgba(249, 250, 251, 0.9);
-        background: rgba(15, 23, 42, 0.6);
-        transform: translateY(-1px);
+            border-color: rgba(249, 250, 251, 0.9);
+            background: rgba(15, 23, 42, 0.6);
+            transform: translateY(-1px);
         }
-
     </style>
 </head>
+
 <body>
+    <!-- Interactive Node Network Background -->
+    <canvas id="nodeCanvas"
+        style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: -1; background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #0f172a 100%);"></canvas>
+
     <!-- Navigation -->
     <nav>
         <div class="nav-container">
@@ -1090,7 +1132,9 @@
             <h1>Hi, I'm Pavan Jangid</h1>
             <p class="hero-subtitle">Data/Business Analyst | Data Scientist | Analytics | AI/GenAI</p>
             <p class="hero-description">
-                Transforming complex data into intelligent solutions. Specialized in predictive maintenance, time-series forecasting, and building production-ready ML pipelines. Currently driving data-driven initiatives at Adani Power's Analytics Center of Excellence.
+                Transforming complex data into intelligent solutions. Specialized in predictive maintenance, time-series
+                forecasting, and building production-ready ML pipelines. Currently driving data-driven initiatives at
+                Adani Power's Analytics Center of Excellence.
             </p>
             <div class="hero-buttons">
                 <a href="#projects" class="btn btn-primary">View My Work</a>
@@ -1106,48 +1150,56 @@
         <div class="about-text">
             <h3 class="scroll-animate">🎯 Data Scientist with 4+ Years of Experience</h3>
             <p class="scroll-animate stagger-1">
-                I'm a passionate Data scientist and ML engineer transitioning from mechanical maintenance to advanced analytics.
-                With a strong foundation in mechanical engineering and an MBA in Big Data Analytics, I combine deep domain expertise
+                I'm a passionate Data scientist and ML engineer transitioning from mechanical maintenance to advanced
+                analytics.
+                With a strong foundation in mechanical engineering and an MBA in Big Data Analytics, I combine deep
+                domain expertise
                 with cutting-edge machine learning techniques to solve real-world problems.
             </p>
             <p class="scroll-animate stagger-2">
-                My journey spans from building <strong>95%+ accurate predictive maintenance models</strong> for thermal power plants
-                to developing <strong>GenAI solutions</strong> for intelligent document processing. I excel at translating complex
+                My journey spans from building <strong>95%+ accurate predictive maintenance models</strong> for thermal
+                power plants
+                to developing <strong>GenAI solutions</strong> for intelligent document processing. I excel at
+                translating complex
                 business problems into elegant, production-ready data solutions that drive measurable impact.
             </p>
         </div>
 
         <div class="about-container">
             <div class="about-text">
-                
-                
+
+
                 <div class="about-highlights">
                     <div class="highlight scroll-animate stagger-1">
                         <span class="highlight-icon">⚙️</span>
                         <div>
                             <strong>Predictive Analytics</strong>
-                            <p style="font-size: 0.85rem; color: var(--text-secondary);">95%+ accuracy models for maintenance optimization & equipment reliability</p>
+                            <p style="font-size: 0.85rem; color: var(--text-secondary);">95%+ accuracy models for
+                                maintenance optimization & equipment reliability</p>
                         </div>
                     </div>
                     <div class="highlight scroll-animate stagger-2">
                         <span class="highlight-icon">🤖</span>
                         <div>
                             <strong>GenAI & LLM Engineering</strong>
-                            <p style="font-size: 0.85rem; color: var(--text-secondary);">Document QA, Chatbots, RAG systems, Prompt Engineering</p>
+                            <p style="font-size: 0.85rem; color: var(--text-secondary);">Document QA, Chatbots, RAG
+                                systems, Prompt Engineering</p>
                         </div>
                     </div>
                     <div class="highlight scroll-animate stagger-3">
                         <span class="highlight-icon">☁️</span>
                         <div>
                             <strong>Cloud & Data Engineering</strong>
-                            <p style="font-size: 0.85rem; color: var(--text-secondary);">Databricks, ETL pipelines, Data warehousing, Streamlit apps</p>
+                            <p style="font-size: 0.85rem; color: var(--text-secondary);">Databricks, ETL pipelines, Data
+                                warehousing, Streamlit apps</p>
                         </div>
                     </div>
                     <div class="highlight scroll-animate stagger-4">
                         <span class="highlight-icon">📊</span>
                         <div>
                             <strong>BI & Real-time Dashboards</strong>
-                            <p style="font-size: 0.85rem; color: var(--text-secondary);">KPI monitoring, Power BI, Tableau, Executive reporting</p>
+                            <p style="font-size: 0.85rem; color: var(--text-secondary);">KPI monitoring, Power BI,
+                                Tableau, Executive reporting</p>
                         </div>
                     </div>
                 </div>
@@ -1198,7 +1250,9 @@
                     <div class="experience-date">Jun 2025 – Present</div>
                 </div>
                 <div class="experience-description">
-                    Built predictive maintenance models achieving 95%+ accuracy. Established Databricks-based analytics workflows. Developed Streamlit dashboards for real-time KPI monitoring. Reduced unplanned downtime and contributed to significant maintenance cost savings.
+                    Built predictive maintenance models achieving 95%+ accuracy. Established Databricks-based analytics
+                    workflows. Developed Streamlit dashboards for real-time KPI monitoring. Reduced unplanned downtime
+                    and contributed to significant maintenance cost savings.
                 </div>
                 <div class="experience-highlights">
                     <span class="highlight-tag">Predictive Modeling</span>
@@ -1218,7 +1272,9 @@
                     <div class="experience-date">Jan 2025 – May 2025</div>
                 </div>
                 <div class="experience-description">
-                    Designed data cleaning pipelines, performed EDA on placement data. Developed WhatsApp chatbot solutions for candidate engagement. Built interactive dashboards for talent management. Improved placement tracking accuracy.
+                    Designed data cleaning pipelines, performed EDA on placement data. Developed WhatsApp chatbot
+                    solutions for candidate engagement. Built interactive dashboards for talent management. Improved
+                    placement tracking accuracy.
                 </div>
                 <div class="experience-highlights">
                     <span class="highlight-tag">GenAI</span>
@@ -1238,7 +1294,8 @@
                     <div class="experience-date">Apr 2024 – Jul 2024</div>
                 </div>
                 <div class="experience-description">
-                    Built production-ready analytics scripts, integrated OCR features (97% accuracy), led LLM prompt engineering. Automated reporting and data processing tasks, reducing manual effort significantly.
+                    Built production-ready analytics scripts, integrated OCR features (97% accuracy), led LLM prompt
+                    engineering. Automated reporting and data processing tasks, reducing manual effort significantly.
                 </div>
                 <div class="experience-highlights">
                     <span class="highlight-tag">LLM Engineering</span>
@@ -1258,7 +1315,9 @@
                     <div class="experience-date">Jan 2021 – Jun 2023</div>
                 </div>
                 <div class="experience-description">
-                    Automated work order classification using Python and NLP. Trained logistic regression classifiers for task-type prediction. Analyzed failure patterns to support preventive maintenance planning. Introduced data-driven decision-making to maintenance operations.
+                    Automated work order classification using Python and NLP. Trained logistic regression classifiers
+                    for task-type prediction. Analyzed failure patterns to support preventive maintenance planning.
+                    Introduced data-driven decision-making to maintenance operations.
                 </div>
                 <div class="experience-highlights">
                     <span class="highlight-tag">NLP</span>
@@ -1279,30 +1338,33 @@
 
                 <div class="project-card scroll-animate">
                     <div class="project-image">
-                        <img src="Icon/Helmet_Detection_1.jpg" alt="Helmet Detection AI Demo" class="project-image-img" />
+                        <img src="Icon/Helmet_Detection_1.jpg" alt="Helmet Detection AI Demo"
+                            class="project-image-img" />
                     </div>
-                
+
                     <div class="project-content">
                         <h3 class="project-title">Helmet Detection using YoLo</h3>
-                
+
                         <p class="project-description">
                             Real-time helmet detection app built with YOLOv8, OpenCV, and Streamlit.
                             Analyze rider safety from images or video streams, highlighting riders
                             with and without helmets for quick visual inspection.
                         </p>
-                
+
                         <div class="project-tags">
                             <span class="project-tag">Computer Vision</span>
                             <span class="project-tag">YOLOv8</span>
                             <span class="project-tag">Streamlit</span>
                             <span class="project-tag">Safety Analytics</span>
                         </div>
-                
+
                         <div class="project-links">
-                            <a href="https://pavan-helmet.streamlit.app" target="_blank" class="project-link project-link-demo">
+                            <a href="https://pavan-helmet.streamlit.app" target="_blank"
+                                class="project-link project-link-demo">
                                 Live Demo
                             </a>
-                            <a href="https://github.com/Pavan-jangid-here/Computer-vision/tree/main/1-Helmet-Detection" target="_blank" class="project-link project-link-code">
+                            <a href="https://github.com/Pavan-jangid-here/Computer-vision/tree/main/1-Helmet-Detection"
+                                target="_blank" class="project-link project-link-code">
                                 <i class="fab fa-github"></i> Code
                             </a>
                         </div>
@@ -1316,7 +1378,8 @@
                     <div class="project-content">
                         <h3 class="project-title">DocuQuery AI Lite</h3>
                         <p class="project-description">
-                            Advanced document analytics platform using Streamlit and Llama 2. Enables semantic search and Q&A over business documents with intelligent PDF processing.
+                            Advanced document analytics platform using Streamlit and Llama 2. Enables semantic search
+                            and Q&A over business documents with intelligent PDF processing.
                         </p>
                         <div class="project-tags">
                             <span class="project-tag">GenAI</span>
@@ -1337,7 +1400,8 @@
                     <div class="project-content">
                         <h3 class="project-title">Combustion Optimization</h3>
                         <p class="project-description">
-                            ML models for optimizing boiler combustion parameters. Targets lower heat rates and reduced fuel costs through predictive optimization in thermal power operations.
+                            ML models for optimizing boiler combustion parameters. Targets lower heat rates and reduced
+                            fuel costs through predictive optimization in thermal power operations.
                         </p>
                         <div class="project-tags">
                             <span class="project-tag">Predictive Modeling</span>
@@ -1357,7 +1421,8 @@
                     <div class="project-content">
                         <h3 class="project-title">Clinker Prediction</h3>
                         <p class="project-description">
-                            Deep learning models for predicting catalytic clinker formation. Prevents equipment damage and unplanned outages through advanced time-series forecasting.
+                            Deep learning models for predicting catalytic clinker formation. Prevents equipment damage
+                            and unplanned outages through advanced time-series forecasting.
                         </p>
                         <div class="project-tags">
                             <span class="project-tag">Deep Learning</span>
@@ -1375,7 +1440,8 @@
         </div>
 
         <div>
-            <h3 style="font-size: 1.3rem; margin-bottom: 1.5rem; color: var(--text-primary);">🔗 Latest GitHub Repositories</h3>
+            <h3 style="font-size: 1.3rem; margin-bottom: 1.5rem; color: var(--text-primary);">🔗 Latest GitHub
+                Repositories</h3>
             <div id="github-projects" class="projects-grid">
                 <div class="loading-spinner">
                     <div class="spinner"></div>
@@ -1441,34 +1507,35 @@
             </div>
 
             <div class="skill-card">
-                <svg class="skill-icon" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" aria-label="Tableau logo">
+                <svg class="skill-icon" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg"
+                    aria-label="Tableau logo">
                     <!-- center cross -->
                     <rect x="30" y="14" width="4" height="12" fill="#1F3262" />
                     <rect x="26" y="18" width="12" height="4" fill="#1F3262" />
-            
+
                     <!-- top cross -->
                     <rect x="30" y="4" width="4" height="8" fill="#1F3262" />
                     <rect x="26" y="6" width="12" height="4" fill="#1F3262" />
-            
+
                     <!-- bottom cross -->
                     <rect x="30" y="40" width="4" height="8" fill="#1F3262" />
                     <rect x="26" y="42" width="12" height="4" fill="#1F3262" />
-            
+
                     <!-- left cross -->
                     <rect x="14" y="26" width="4" height="12" fill="#1F3262" />
                     <rect x="10" y="30" width="12" height="4" fill="#1F3262" />
-            
+
                     <!-- right cross -->
                     <rect x="46" y="26" width="4" height="12" fill="#1F3262" />
                     <rect x="42" y="30" width="12" height="4" fill="#1F3262" />
-            
+
                     <!-- small marks (Tableau dots) -->
                     <rect x="18" y="14" width="3" height="3" fill="#E97627" />
                     <rect x="43" y="14" width="3" height="3" fill="#E97627" />
                     <rect x="18" y="40" width="3" height="3" fill="#E97627" />
                     <rect x="43" y="40" width="3" height="3" fill="#E97627" />
                 </svg>
-            
+
                 <div class="skill-name">Tableau</div>
             </div>
 
@@ -1555,7 +1622,8 @@
     <section class="contact" id="contact">
         <h2>Let's Connect</h2>
         <div class="contact-content">
-            <p>I'm always interested in connecting with recruiters, collaborators, and fellow data enthusiasts. Feel free to reach out!</p>
+            <p>I'm always interested in connecting with recruiters, collaborators, and fellow data enthusiasts. Feel
+                free to reach out!</p>
         </div>
         <div class="contact-links">
             <a href="https://www.linkedin.com/in/pavan-jangid-big-data-analyst" target="_blank" class="contact-link">
@@ -1587,7 +1655,8 @@
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2025 Pavan Jangid. Designed with <span style="color: var(--secondary);">💚</span> for data enthusiasts and recruiters.</p>
+        <p>&copy; 2025 Pavan Jangid. Designed with <span style="color: var(--secondary);">💚</span> for data enthusiasts
+            and recruiters.</p>
         <p style="margin-top: 1rem; color: var(--text-secondary); font-size: 0.9rem;">
             Built with Node.js • Crafted with attention to detail • Open to fork and customize
         </p>
@@ -1612,7 +1681,7 @@
         });
 
         // Add scroll effect to navbar
-        window.addEventListener('scroll', function() {
+        window.addEventListener('scroll', function () {
             const nav = document.querySelector('nav');
             if (window.scrollY > 50) {
                 nav.style.borderBottomColor = 'rgba(51, 65, 85, 0.5)';
@@ -1627,7 +1696,7 @@
             rootMargin: '0px 0px -50px 0px'
         };
 
-        const observer = new IntersectionObserver(function(entries) {
+        const observer = new IntersectionObserver(function (entries) {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
                     entry.target.classList.add('visible');
@@ -1644,32 +1713,32 @@
         async function fetchGitHubProjects() {
             const username = 'Pavan-jangid-here';
             const container = document.getElementById('github-projects');
-            
+
             try {
                 const response = await fetch(`https://api.github.com/users/${username}/repos?sort=updated&per_page=6`);
-                
+
                 if (!response.ok) {
                     throw new Error('Failed to fetch GitHub data');
                 }
-                
+
                 const repos = await response.json();
-                
+
                 if (repos.length === 0) {
                     container.innerHTML = '<p style="text-align: center; color: var(--text-secondary);">No repositories found.</p>';
                     return;
                 }
-                
+
                 container.innerHTML = '';
                 repos.forEach((repo, index) => {
                     const card = document.createElement('div');
                     card.className = 'github-project-card scroll-animate';
                     card.style.animationDelay = `${index * 0.1}s`;
-                    
+
                     const language = repo.language || 'Unknown';
                     const stars = repo.stargazers_count || 0;
                     const description = repo.description || 'No description available';
                     const url = repo.html_url;
-                    
+
                     card.innerHTML = `
                         <div class="github-project-header">
                             <a href="${url}" target="_blank" class="github-repo-name">
@@ -1686,7 +1755,7 @@
                             View Repository <i class="fas fa-arrow-right" style="margin-left: 0.3rem;"></i>
                         </a>
                     `;
-                    
+
                     container.appendChild(card);
                     observer.observe(card);
                 });
@@ -1704,5 +1773,202 @@
         // Load GitHub projects when DOM is ready
         document.addEventListener('DOMContentLoaded', fetchGitHubProjects);
     </script>
+
+    <script>
+        // Interactive Node Network Background
+        const canvas = document.getElementById('nodeCanvas');
+        const ctx = canvas.getContext('2d');
+
+        // Canvas setup
+        function resizeCanvas() {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+        }
+        resizeCanvas();
+        window.addEventListener('resize', resizeCanvas);
+
+        // Configuration
+        const config = {
+            nodeCount: 60,
+            nodeSize: 2.5,
+            connectionDistance: 150,
+            speed: 0.3,
+            mouseInfluenceRadius: 200,
+            mouseRepulsion: 40
+        };
+
+        // Node class
+        class Node {
+            constructor(x, y) {
+                this.x = x;
+                this.y = y;
+                this.originalX = x;
+                this.originalY = y;
+                this.vx = (Math.random() - 0.5) * config.speed;
+                this.vy = (Math.random() - 0.5) * config.speed;
+                this.size = Math.random() * 2 + 1;
+                this.opacity = Math.random() * 0.6 + 0.4;
+                this.pulse = Math.random() * Math.PI * 2;
+                this.pulseSpeed = Math.random() * 0.02 + 0.005;
+            }
+
+            update() {
+                // Gentle floating motion
+                this.x += this.vx;
+                this.y += this.vy;
+                this.pulse += this.pulseSpeed;
+
+                // Boundary wrapping
+                if (this.x < 0) this.x = canvas.width;
+                if (this.x > canvas.width) this.x = 0;
+                if (this.y < 0) this.y = canvas.height;
+                if (this.y > canvas.height) this.y = 0;
+
+                // Soft attraction to original position
+                const dx = this.originalX - this.x;
+                const dy = this.originalY - this.y;
+                const distance = Math.sqrt(dx * dx + dy * dy);
+
+                if (distance > 0) {
+                    this.vx += dx * 0.00005;
+                    this.vy += dy * 0.00005;
+                }
+
+                // Velocity damping
+                this.vx *= 0.98;
+                this.vy *= 0.98;
+            }
+
+            draw() {
+                // Pulsing glow effect
+                const pulseAmount = Math.sin(this.pulse) * 0.3 + 0.7;
+                const glowSize = this.size * 3 * pulseAmount;
+
+                // Glow
+                const gradient = ctx.createRadialGradient(this.x, this.y, 0, this.x, this.y, glowSize);
+                gradient.addColorStop(0, `rgba(34, 211, 238, ${this.opacity * 0.6 * pulseAmount})`);
+                gradient.addColorStop(1, 'rgba(34, 211, 238, 0)');
+                ctx.fillStyle = gradient;
+                ctx.beginPath();
+                ctx.arc(this.x, this.y, glowSize, 0, Math.PI * 2);
+                ctx.fill();
+
+                // Core node
+                ctx.fillStyle = `rgba(148, 163, 184, ${this.opacity * pulseAmount})`;
+                ctx.beginPath();
+                ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+                ctx.fill();
+            }
+        }
+
+        // Create nodes
+        let nodes = [];
+        function initializeNodes() {
+            nodes = [];
+            for (let i = 0; i < config.nodeCount; i++) {
+                const x = Math.random() * canvas.width;
+                const y = Math.random() * canvas.height;
+                nodes.push(new Node(x, y));
+            }
+        }
+        initializeNodes();
+
+        // Mouse tracking
+        let mouseX = canvas.width / 2;
+        let mouseY = canvas.height / 2;
+        let showMouse = false;
+
+        document.addEventListener('mousemove', (e) => {
+            mouseX = e.clientX;
+            mouseY = e.clientY;
+            showMouse = true;
+        });
+
+        document.addEventListener('mouseleave', () => {
+            showMouse = false;
+        });
+
+        // Draw connections
+        function drawConnections() {
+            for (let i = 0; i < nodes.length; i++) {
+                for (let j = i + 1; j < nodes.length; j++) {
+                    const dx = nodes[i].x - nodes[j].x;
+                    const dy = nodes[i].y - nodes[j].y;
+                    const distance = Math.sqrt(dx * dx + dy * dy);
+
+                    if (distance < config.connectionDistance) {
+                        const opacity = (1 - distance / config.connectionDistance) * 0.3;
+                        ctx.strokeStyle = `rgba(34, 211, 238, ${opacity})`;
+                        ctx.lineWidth = 1;
+                        ctx.beginPath();
+                        ctx.moveTo(nodes[i].x, nodes[i].y);
+                        ctx.lineTo(nodes[j].x, nodes[j].y);
+                        ctx.stroke();
+                    }
+                }
+            }
+        }
+
+        // Apply mouse influence
+        function applyMouseInfluence() {
+            if (!showMouse) return;
+
+            nodes.forEach(node => {
+                const dx = node.x - mouseX;
+                const dy = node.y - mouseY;
+                const distance = Math.sqrt(dx * dx + dy * dy);
+
+                if (distance < config.mouseInfluenceRadius) {
+                    const force = (1 - distance / config.mouseInfluenceRadius) * config.mouseRepulsion;
+                    const angle = Math.atan2(dy, dx);
+
+                    node.vx += Math.cos(angle) * force * 0.1;
+                    node.vy += Math.sin(angle) * force * 0.1;
+
+                    // Increase opacity when near mouse
+                    node.opacity = Math.min(1, node.opacity + 0.05);
+                }
+            });
+        }
+
+        // Animation loop
+        function animate() {
+            // Clear canvas
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+            // Redraw background
+            const bgGradient = ctx.createLinearGradient(0, 0, canvas.width, canvas.height);
+            bgGradient.addColorStop(0, '#0f172a');
+            bgGradient.addColorStop(0.5, '#1e293b');
+            bgGradient.addColorStop(1, '#0f172a');
+            ctx.fillStyle = bgGradient;
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+            // Update and draw nodes
+            nodes.forEach(node => {
+                node.update();
+                node.draw();
+            });
+
+            // Apply mouse interactions
+            applyMouseInfluence();
+
+            // Draw connections
+            drawConnections();
+
+            requestAnimationFrame(animate);
+        }
+
+        animate();
+
+        // Reinitialize on visibility change
+        window.addEventListener('visibilitychange', () => {
+            if (!document.hidden) {
+                resizeCanvas();
+                initializeNodes();
+            }
+        });
+    </script>
 </body>
+
 </html>
